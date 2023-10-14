@@ -364,7 +364,7 @@
 
 
 #### 2.5.4 Микросервисы
-##### 1. Shares checker
+#### 1. Shares checker
 
 ![Shares checker](images/shares-checker-scheme.png)
 
@@ -387,7 +387,7 @@
   - Хранение сложностей воркеров (vardiffs) в кэше Redis для быстрого их получения при подключении воркера и для избежания их потери в момент переподключения воркера. 
 
 
-##### 2. Shares processor
+#### 2. Shares processor
 
 ![Shares processor](images/shares-processor-scheme.png)
 
@@ -403,7 +403,7 @@
   - поиск даты последней найденной шары для конкретного воркера
   - прочие аналитические запросы
 
-##### 3. Miners processor
+#### 3. Miners processor
 
 ![Miners processor](images/miners-processor-scheme.png)
 
@@ -415,7 +415,7 @@
   - Поиск идентификатора майнера/воркера в базе по запросам из внешних микросервисов (Shares processor, Miners rewards, Miners payouts, API Gateway)
   - Получение событий из Kafka, касающихся майнеров и воркеров и их обработка
 
-##### 4. Miners rewards
+#### 4. Miners rewards
 
 ![Miners rewards](images/miners-rewards-scheme.png)
 
@@ -433,7 +433,7 @@
   - Запросы идентификаторов майнеров/воркеров из микросервиса Miners processor (gRPC)
   - Обработка запросов с фронтенда через API Gateway (REST). Данные по распределению наград за блок между майнерами, данные по наградам в разрезе майнера/воркера, данные по найденному блоку.
 
-##### 5. Miners payouts
+#### 5. Miners payouts
 
 ![Miners payouts](images/miners-payouts-scheme.png)
 
@@ -454,7 +454,7 @@
   - Обработка запросов с фронтенда через API Gateway
 
 
-##### 6. Notification manager
+#### 6. Notification manager
 
 ![Notification manager](images/notification-manager-scheme.png)
        
@@ -467,7 +467,7 @@
   - Рассылка сообщений о происходящих изменениях через Websocket API  Gateway в админку (текущие приходящие шары, статусы серверов, ошибки, алерты и другие характеристики)
   - Рассылка уведомлений и алертов в Telegram боты пользователя (нахождение блока, прерывание работы воркера) и администратора (падение сервера, критическая нагрузка и т.п.)
 
-##### 7. User manager
+#### 7. User manager
 
 ![User manager](images/user-manager-scheme.png)
 
@@ -479,7 +479,7 @@
   - выдача JWT токена
 
 
-##### 8. Telegram miner bot
+#### 8. Telegram miner bot
 
 ![Telegram miner bot](images/tg-miner-bot-scheme.png)
 
