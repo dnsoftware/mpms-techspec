@@ -1,3 +1,5 @@
+# Общая схема проекта
+
 ![Общая схема](images/global-structure.png)
 
 В высоком разрешении на [этой странице](https://laradrom.ru/struktura-i-komponenty-majning-pula/).
